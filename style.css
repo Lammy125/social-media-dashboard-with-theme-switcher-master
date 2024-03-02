@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+/* lightMode */
+.lightMode {
+  background-color: hsl(0, 0%, 100%);
+  padding: 0 9rem;
+  height: 100vh;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.mode {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.h1LightMode {
+  color: hsl(230, 17%, 14%);
+}
+
+.dashboard p {
+  font-size: 14px;
+  font-weight: 700;
+  color: hsl(228, 12%, 44%);
+}
+
+.mode p {
+  font-size: 14px;
+  font-weight: 700;
+  color: hsl(228, 12%, 44%);
+}
+
+.labelCon {
+  padding-top: 7px;
+}
+
+.toggle-container {
+  display: inline-block;
+  position: relative;
+}
+
+.toggle-container :hover {
+  cursor: pointer;
+}
+
+.toggle-container input[type="checkbox"] {
+  display: none;
+}
+
+.toggle-track {
+  width: 36px;
+  height: 18px;
+  background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  border-radius: 210px;
+  position: relative;
+}
+
+.toggle-thumb {
+  width: 14px;
+  height: 14px;
+  background-color: hsl(230, 17%, 14%);
+  border-radius: 50%;
+  position: absolute;
+  top: 12%;
+  left: 8%;
+  transition: transform 0.3s;
+}
+
+.toggle-container input[type="checkbox"]:checked + .toggle-track .toggle-thumb {
+  transform: translateX(17px);
+  background-color: #ffffff;
+}
+
+.toggle-container input[type="checkbox"]:checked + .toggle-track {
+  background: hsl(230, 22%, 74%);
+}
+
+.sectionOne {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardOneLightMode {
+  background-color: hsl(227, 47%, 96%);
+  width: 290px;
+  text-align: center;
+  border-radius: 7px;
+  padding: 1.5rem 0;
+  border-top: 4px solid hsl(208, 92%, 53%);
+}
+
+.cardOneLightMode:hover {
+  cursor: pointer;
+  background-color: hsl(228, 68%, 93%);
+}
+
+.cardTwoLightMode {
+  background-color: hsl(227, 47%, 96%);
+  width: 290px;
+  text-align: center;
+  border-radius: 7px;
+  padding: 1.5rem 0;
+  border-top: 4px solid hsl(203, 89%, 53%);
+}
+
+.cardTwoLightMode:hover {
+  cursor: pointer;
+  background-color: hsl(228, 68%, 93%);
+}
+
+.cardThreeLightMode {
+  background-color: hsl(227, 47%, 96%);
+  width: 290px;
+  text-align: center;
+  border-radius: 7px;
+  padding: 1.5rem 0;
+  border-top: 4px solid hsl(329, 70%, 58%);
+}
+
+.cardThreeLightMode:hover {
+  cursor: pointer;
+  background-color: hsl(228, 68%, 93%);
+}
+
+.cardFourLightMode {
+  background-color: hsl(227, 47%, 96%);
+  width: 290px;
+  text-align: center;
+  border-radius: 7px;
+  padding: 1.5rem 0;
+  border-top: 4px solid hsl(348, 97%, 39%);
+}
+
+.cardFourLightMode:hover {
+  cursor: pointer;
+  background-color: hsl(228, 68%, 93%);
+}
+
+.iconDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.iconDiv p {
+  font-size: 13px;
+  font-weight: 700;
+  color: hsl(228, 12%, 44%);
+}
+
+.imgIcon {
+  padding-top: 8px;
+}
+
+.h2LightMode {
+  font-size: 40px;
+  color: hsl(230, 17%, 14%);
+}
+
+.followersLightMode {
+  letter-spacing: 0.07cm;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: hsl(228, 12%, 44%);
+  font-weight: 400;
+}
+
+.arrowCon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  gap: 5px;
+}
+
+.todayUp {
+  color: hsl(163, 72%, 41%);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.todayDown {
+  color: hsl(356, 69%, 56%);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.sectionTwo {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+
+.h3LightMode {
+  color: hsl(228, 12%, 44%);
+  padding-bottom: 1rem;
+}
+
+.gridCard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.4rem;
+}
+
+.cardLightMode {
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 7px;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cardLightMode:hover {
+  cursor: pointer;
+  background-color: hsl(228, 68%, 93%);
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.h4LightMode {
+  font-size: 25px;
+}
+
+.cardText {
+  font-size: 13px;
+  font-weight: 700;
+  color: hsl(228, 12%, 44%);
+}
+
+/* darkmode */
+.darkMode {
+  background-color: hsl(230, 17%, 14%);
+  padding: 0 9rem;
+  height: 100vh;
+}
+
+.h1DarkMode {
+  color: hsl(0, 0%, 100%);
+}
+
+.dashboard p {
+  font-size: 14px;
+  font-weight: 700;
+  color: hsl(228, 34%, 66%);
+}
+
+.mode p {
+  font-size: 14px;
+  font-weight: 700;
+  color: hsl(228, 34%, 66%);
+}
+
+.cardOneDarkMode {
+  background-color: hsl(228, 28%, 20%);
+  width: 290px;
+  text-align: center;
+  border-radius: 7px;
+  padding: 1.5rem 0;
+  border-top: 4px solid hsl(208, 92%, 53%);
+}
+
+.cardOneDarkMode:hover {
+  cursor: pointer;
+  background-color: hsl(228, 25%, 32%);
+}
+
+.cardTwoDarkMode {
+  background-color: hsl(228, 28%, 20%);
+  width: 290px;
+  text-align: center;
+  border-radius: 7px;
+  padding: 1.5rem 0;
+  border-top: 4px solid hsl(203, 89%, 53%);
+}
+
+.cardTwoDarkMode:hover {
+  cursor: pointer;
+  background-color: hsl(228, 25%, 32%);
+}
+
+.cardThreeDarkMode {
+  background-color: hsl(228, 28%, 20%);
+  width: 290px;
+  text-align: center;
+  border-radius: 7px;
+  padding: 1.5rem 0;
+  border-top: 4px solid hsl(329, 70%, 58%);
+}
+
+.cardThreeDarkMode:hover {
+  cursor: pointer;
+  background-color: hsl(228, 25%, 32%);
+}
+
+.cardFourDarkMode {
+  background-color: hsl(228, 28%, 20%);
+  width: 290px;
+  text-align: center;
+  border-radius: 7px;
+  padding: 1.5rem 0;
+  border-top: 4px solid hsl(348, 97%, 39%);
+}
+
+.cardFourDarkMode:hover {
+  cursor: pointer;
+  background-color: hsl(228, 25%, 32%);
+}
+
+.iconDiv p {
+  font-size: 13px;
+  font-weight: 700;
+  color: hsl(228, 34%, 66%);
+}
+
+.h2DarkMode {
+  font-size: 40px;
+  color: hsl(0, 0%, 100%);
+}
+
+.followersDarkMode {
+  letter-spacing: 0.07cm;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: hsl(228, 34%, 66%);
+  font-weight: 400;
+}
+
+.h3DarkMode {
+  color: hsl(0, 0%, 100%);
+  padding-bottom: 1rem;
+}
+
+.cardDarkMode {
+  background-color: hsl(228, 28%, 20%);
+  border-radius: 7px;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cardDarkMode:hover {
+  cursor: pointer;
+  background-color: hsl(228, 25%, 32%);
+}
+
+.h4DarkMode {
+  font-size: 25px;
+  color: hsl(0, 0%, 100%);
+}
+
+.cardText {
+  font-size: 13px;
+  font-weight: 700;
+  color: hsl(228, 34%, 66%);
+}
