@@ -43,6 +43,7 @@ a:hover {
 .mode {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 0.7rem;
 }
 
@@ -397,4 +398,126 @@ a:hover {
   font-size: 13px;
   font-weight: 700;
   color: hsl(228, 34%, 66%);
+}
+
+@media screen and (max-width: 600px) {
+  /* darkmode */
+  .darkMode {
+    padding: 0 1.8rem;
+    height: 100%;
+  }
+
+  .navBar {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: none;
+  }
+
+  .dashboard {
+    border-bottom: 1px solid hsl(228, 25%, 32%);
+    padding-bottom: 1rem;
+    width: 100%;
+  }
+
+  .dashboard p {
+    font-size: 15px;
+  }
+
+  .mode p {
+    font-size: 15px;
+  }
+
+  .mode {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .sectionOne {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .cardOneDarkMode {
+    width: 100%;
+  }
+
+  .cardTwoDarkMode {
+    width: 100%;
+  }
+
+  .cardThreeDarkMode {
+    width: 100%;
+  }
+
+  .cardFourDarkMode {
+    width: 100%;
+  }
+
+  .iconDiv p {
+    font-size: 14px;
+  }
+
+  .h2DarkMode {
+    font-size: 55px;
+  }
+
+  .followersDarkMode {
+    letter-spacing: 0.1cm;
+    font-size: 13px;
+  }
+
+  .h3DarkMode {
+    font-size: 24px;
+    padding-bottom: 1.4rem;
+  }
+
+  .gridCard {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .h4DarkMode {
+    font-size: 28px;
+    color: hsl(0, 0%, 100%);
+  }
+
+  /* lightmode */
+  .lightMode {
+    padding: 0 1.8rem;
+    height: 10%;
+  }
+
+  .cardOneLightMode {
+    width: 100%;
+  }
+
+  .cardTwoLightMode {
+    width: 100%;
+  }
+
+  .cardThreeLightMode {
+    width: 100%;
+  }
+
+  .cardFourLightMode {
+    width: 100%;
+  }
+
+  .h2LightMode {
+    font-size: 55px;
+  }
+
+  .followersLightMode {
+    letter-spacing: 0.1cm;
+    font-size: 13px;
+  }
+
+  .h3LightMode {
+    font-size: 24px;
+    padding-bottom: 1.4rem;
+  }
+
+  .h4LightMode {
+    font-size: 28px;
+  }
 }
