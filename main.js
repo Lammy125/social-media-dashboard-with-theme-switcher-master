@@ -1,12 +1,4 @@
-// main.js
-
-document.addEventListener("DOMContentLoaded", function () {
-  const toggleButton = document.getElementById("toggleButton");
-  const lightModeContainer = document.querySelector(".lightMode");
-  const darkModeContainer = document.querySelector(".darkMode");
-
-  toggleButton.addEventListener("change", function () {
-    lightModeContainer.style.display = toggleButton.checked ? "block" : "none";
-    darkModeContainer.style.display = toggleButton.checked ? "none" : "block";
-  });
+document.getElementById("toggleButton").addEventListener("change", function () {
+  document.body.classList.toggle("dark-mode");
+  document.body.classList.toggle("light-mode");
 });
